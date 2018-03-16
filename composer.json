@@ -1,0 +1,27 @@
+{
+  "name": "fabstract/datetimehandler",
+  "type": "library",
+  "description": "DateTimeHandler library for PHP",
+  "keywords": [
+    "php",
+    "date",
+    "time",
+    "datetime"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmet Turk",
+      "email": "ahmetturk93@gmail.com",
+      "homepage": "https://github.com/fabstract"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fabstract\\Component\\DateTimeHandler\\": "src"
+    }
+  },
+  "require": {
+    "php": "^7.0"
+  }
+}
