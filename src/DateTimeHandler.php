@@ -41,12 +41,12 @@ class DateTimeHandler
 
     /**
      * @param string $format
-     * @param string $time
+     * @param int $timestamp
      * @return string
      */
-    public static function timeWithFormat($format, $time)
+    public static function timeWithFormat($format, $timestamp)
     {
-        $date = gmdate($format, $time);
+        $date = gmdate($format, $timestamp);
         if ($date === false) {
             return "";
         }
