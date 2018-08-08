@@ -55,6 +55,29 @@ class DateTimeHandler
     }
 
     /**
+     * Returns a numeric representation of the week of the year for current time, starting with the first Monday
+     * as the first week.
+     *
+     * @return int Returns 1 if first week
+     */
+    public static function currentWeekIndexWithMondayAsStartOfTheWeek()
+    {
+        return intval(strftime('%W'));
+    }
+
+    /**
+     * Returns a numeric representation of the week of the year for given timestamp, starting with the first Monday
+     * as the first week.
+     *
+     * @param int $timestamp
+     * @return int Returns 1 if first week
+     */
+    public static function weekIndexWithMondayAsStartOfTheWeek($timestamp)
+    {
+        return intval(strftime('%W', $timestamp));
+    }
+
+    /**
      * @param $date_string
      * @param $day
      * @return string
